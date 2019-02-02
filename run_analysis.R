@@ -73,4 +73,5 @@ tidy_data <- data %>%
   group_by(subject, label, name) %>%
   summarize(average=mean(value))
 
-write.table(tidy_data, "data/tidy_data.txt")
+write.table(tidy_data, "data/tidy_data.txt", row.name=FALSE)
+
